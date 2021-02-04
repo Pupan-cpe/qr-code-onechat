@@ -54,14 +54,15 @@
   
       
 
-      
+    
     if (ScanQRcodevalue === ""){
       alert("data empty ")
     }else { 
 
       const data = { Qrcode: ScanQRcodevalue , };
       alert("Scan Success!");
-      fetch('https://a472f522ada6d1beba832d820737caf1.m.pipedream.net', {
+      alert(ScanQRcodevalue);
+      fetch('https://053875ec82bc2a4c971bac42f5e900f0.m.pipedream.net', { //endpoint qr-code ค่าที่ต้องการส่งไป
         method: 'POST', // or 'PUT'
         headers: {
           'Content-Type': 'application/json',
